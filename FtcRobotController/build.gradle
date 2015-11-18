@@ -35,6 +35,10 @@ allprojects {
         }
     }
 }
+// this seems to be necessary to prevent gradle errors
+android {
+    compileSdkVersion 19
+}
 
 dependencies {
     compile files('libs/android-support-v4.jar')
